@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <rect width="256" height="256" fill="#F2EFEB"/>
+  <pattern id="dot-grid" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
+    <circle cx="1" cy="1" r="1" fill="#E1E1E1"/>
+  </pattern>
+  <rect width="256" height="256" fill="url(#dot-grid)"/>
+</svg>

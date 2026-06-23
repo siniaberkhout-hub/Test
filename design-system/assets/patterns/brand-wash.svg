@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+  <defs>
+    <radialGradient id="brand-wash" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#F6F4F2"/>
+      <stop offset="100%" stop-color="#F2EFEB"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#brand-wash)"/>
+</svg>

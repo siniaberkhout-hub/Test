@@ -1,0 +1,147 @@
+/*
+ * WAXR Academy Design System — CSS custom properties
+ *
+ * Drop this at the top of your global stylesheet. Consume via var(--waxr-*).
+ * Source of truth: design-system/tokens/tokens.json
+ */
+
+:root {
+  /* ── Brand (taupe) ─────────────────────────────────── */
+  --waxr-brand-50:  #F6F4F2;
+  --waxr-brand-100: #EBE7E3;
+  --waxr-brand-200: #D9D1C9;
+  --waxr-brand-300: #C5B8AD;
+  --waxr-brand-400: #AC9A8A;
+  --waxr-brand-500: #9C8774;
+  --waxr-brand-600: #8F7761;  /* primary */
+  --waxr-brand-700: #735F4D;
+  --waxr-brand-800: #5A4B3B;
+  --waxr-brand-900: #44382B;
+
+  /* ── Accent (CTA orange — action only) ────────────── */
+  --waxr-accent-100: #FFE9D6;
+  --waxr-accent-600: #FF914D;
+  --waxr-accent-700: #E87A33;
+
+  /* ── Ink (text) ────────────────────────────────────── */
+  --waxr-ink-100: #F2F2F2;
+  --waxr-ink-200: #E1E1E1;
+  --waxr-ink-300: #C3C3C3;
+  --waxr-ink-400: #9F9F9F;
+  --waxr-ink-500: #7B7B7B;
+  --waxr-ink-600: #595959;
+  --waxr-ink-700: #3F3F3F;
+  --waxr-ink-900: #2A2A2A;
+
+  /* ── Surfaces ──────────────────────────────────────── */
+  --waxr-paper:     #F2EFEB;
+  --waxr-surface:   #FFFFFF;
+  --waxr-line:      #E2DDD5;
+  --waxr-line-soft: #ECE8E2;
+
+  /* ── Semantic ──────────────────────────────────────── */
+  --waxr-success-100: #E2F5EC;
+  --waxr-success-600: #1F9D6B;
+  --waxr-warn-100:    #FBF2DC;
+  --waxr-warn-600:    #C08415;
+  --waxr-danger-100:  #FAE4E2;
+  --waxr-danger-600:  #C8382F;
+
+  /* ── Type ──────────────────────────────────────────── */
+  --waxr-font-sans:    'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --waxr-font-display: 'Playfair Display', ui-serif, Georgia, serif;
+  --waxr-font-mono:    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --waxr-weight-regular:  400;
+  --waxr-weight-medium:   500;
+  --waxr-weight-semibold: 600;
+  --waxr-weight-bold:     700;
+
+  /* ── Spacing (4px base) ────────────────────────────── */
+  --waxr-space-0:   0px;
+  --waxr-space-0_5: 2px;
+  --waxr-space-1:   4px;
+  --waxr-space-1_5: 6px;
+  --waxr-space-2:   8px;
+  --waxr-space-3:   12px;
+  --waxr-space-4:   16px;
+  --waxr-space-5:   20px;
+  --waxr-space-6:   24px;
+  --waxr-space-8:   32px;
+  --waxr-space-10:  40px;
+  --waxr-space-12:  48px;
+  --waxr-space-16:  64px;
+  --waxr-space-20:  80px;
+  --waxr-space-24:  96px;
+  --waxr-space-32:  128px;
+  --waxr-space-40:  160px;
+
+  /* ── Radius ────────────────────────────────────────── */
+  --waxr-radius-none: 0px;
+  --waxr-radius-xs:   4px;
+  --waxr-radius-sm:   6px;
+  --waxr-radius-md:   10px;
+  --waxr-radius-lg:   16px;
+  --waxr-radius-xl:   24px;
+  --waxr-radius-full: 9999px;
+
+  /* ── Shadow ────────────────────────────────────────── */
+  --waxr-shadow-none: none;
+  --waxr-shadow-xs:   0 1px 2px rgba(42, 42, 42, 0.04);
+  --waxr-shadow-sm:   0 1px 3px rgba(42, 42, 42, 0.06), 0 1px 2px rgba(42, 42, 42, 0.04);
+  --waxr-shadow-md:   0 4px 12px rgba(42, 42, 42, 0.06), 0 2px 4px rgba(42, 42, 42, 0.04);
+  --waxr-shadow-lg:   0 12px 32px rgba(42, 42, 42, 0.08), 0 4px 8px rgba(42, 42, 42, 0.04);
+  --waxr-shadow-xl:   0 24px 48px rgba(42, 42, 42, 0.10), 0 8px 16px rgba(42, 42, 42, 0.06);
+
+  /* ── Motion ────────────────────────────────────────── */
+  --waxr-dur-xs: 80ms;
+  --waxr-dur-sm: 160ms;
+  --waxr-dur-md: 240ms;
+  --waxr-dur-lg: 480ms;
+  --waxr-dur-xl: 720ms;
+
+  --waxr-ease-out:      cubic-bezier(0.22, 1, 0.36, 1);
+  --waxr-ease-in-out:   cubic-bezier(0.4, 0, 0.2, 1);
+  --waxr-ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Container ─────────────────────────────────────── */
+  --waxr-container-max:     1200px;
+  --waxr-container-reading: 680px;
+  --waxr-gutter-mobile:     16px;
+  --waxr-gutter-desktop:    24px;
+}
+
+/* ── Base ─────────────────────────────────────────────── */
+html, body {
+  font-family: var(--waxr-font-sans);
+  color: var(--waxr-ink-900);
+  background: var(--waxr-paper);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ── Type utility classes ─────────────────────────────── */
+.display-xl { font-family: var(--waxr-font-display); font-size: 72px; line-height: 80px; font-weight: 600; letter-spacing: -0.01em; }
+.display-lg { font-family: var(--waxr-font-display); font-size: 56px; line-height: 64px; font-weight: 600; letter-spacing: -0.01em; }
+.h1         { font-family: var(--waxr-font-display); font-size: 40px; line-height: 48px; font-weight: 600; letter-spacing: -0.005em; }
+.h2         { font-family: var(--waxr-font-display); font-size: 32px; line-height: 40px; font-weight: 600; letter-spacing: -0.005em; }
+.h3         { font-family: var(--waxr-font-display); font-size: 24px; line-height: 32px; font-weight: 600; }
+.h4         { font-family: var(--waxr-font-sans); font-size: 20px; line-height: 28px; font-weight: 600; }
+.body-lg    { font-size: 18px; line-height: 28px; font-weight: 400; }
+.body-md    { font-size: 16px; line-height: 24px; font-weight: 400; }
+.body-sm    { font-size: 14px; line-height: 20px; font-weight: 400; }
+.caption    { font-size: 12px; line-height: 16px; font-weight: 500; }
+.overline   { font-size: 11px; line-height: 16px; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+.code       { font-family: var(--waxr-font-mono); font-size: 14px; line-height: 20px; font-weight: 400; }
+
+/* ── Reduced motion ───────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

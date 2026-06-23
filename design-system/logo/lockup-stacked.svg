@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220" role="img" aria-label="WAXR Academy">
+  <title>WAXR Academy</title>
+  <text x="240" y="100"
+        text-anchor="middle"
+        font-family="'Playfair Display', ui-serif, Georgia, serif"
+        font-weight="600"
+        font-size="88"
+        letter-spacing="0.01em"
+        fill="#8F7761">WAXR</text>
+  <text x="240" y="178"
+        text-anchor="middle"
+        font-family="'Allura', cursive"
+        font-weight="400"
+        font-size="64"
+        fill="#8F7761">Academy</text>
+</svg>

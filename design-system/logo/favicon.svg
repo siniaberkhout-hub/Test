@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="WAXR Academy favicon">
+  <title>WAXR Academy</title>
+  <rect width="32" height="32" rx="6" fill="#F2EFEB"/>
+  <text x="16" y="23"
+        text-anchor="middle"
+        font-family="'Playfair Display', ui-serif, Georgia, serif"
+        font-weight="600"
+        font-size="22"
+        fill="#8F7761">W</text>
+</svg>
