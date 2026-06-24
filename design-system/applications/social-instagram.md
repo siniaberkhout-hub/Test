@@ -31,6 +31,18 @@ Two real shipped patterns to follow:
 - First frame of any Reel: a real, in-context shot (treatment room, founder talking to camera) — never a title card with stock motion graphics.
 - Caption style: short, second person, sentence case — same voice as the feed.
 
+### Story register (`story.css`)
+
+Stories are a third register, distinct from both the editorial web/PDF style and the carousel style above. Never mix them. See `story.css` and `Story Whiteboard.html` (week-planning overview, 5 day-rows of real 1080×1920 stories) for the full implementation.
+
+- **Background**: real photo, full-bleed, with a dark gradient scrim (`.story-scrim`) over it so text stays legible top and bottom. Max one photo-less slide per day's sequence — solid `brand/900` canvas (`.story--no-photo`), reserved for that day's single impact-statement / belief-shift line.
+- **Text**: Inter only inside `.story` — Playfair Display never appears in story content, only in the whiteboard chrome around it. One short idea per text box (`.story-textbox`), vertically centered, **left-aligned** (never centered — stories read left to right). Key words get `.story-highlight` (`accent/600`) — used sparingly, on the phrase that carries the point, not decoratively.
+- **CTA sub-line**: when a slide's source copy has both a body line and a separate CTA line, the CTA renders as a smaller `.story-cta-sub` block beneath the main text, divided by a hairline — never as invented extra slides.
+- **Stickers**: poll/tap/DM placeholders (`.story-sticker--poll` / `--tap` / `--dm`) are compact and **horizontally centered**, sitting below the text box, never overlapping it. They're deliberately small — real Instagram stickers get placed over them after upload. Slide 1 of every day's sequence gets an automatic generic poll placeholder; explicit engagement lines (real polls, tap-the-heart asks, DM-keyword asks) get a sticker with that line's exact wording, never invented copy.
+- **Fixed chrome on every slide**: progress segments (`.story-progress`) reflecting position in that day's sequence, account header ("waxr.academy · nu") with `mark-inverse.svg` avatar, and a bottom-corner `mark-inverse.svg` watermark — the documented logo variant for photo backgrounds with a scrim.
+- **Scale technique**: each `.story` keeps real 1080×1920 dimensions; a `.story-thumb` wrapper scales it down to ~260px wide for the whiteboard view via CSS `transform: scale()`, so the same markup captures at full resolution for export.
+- **Export**: the whiteboard's "Download alle stories (PNG)" button renders every story from a hidden, unscaled `#render-stage` via `html-to-image` at 2x pixel ratio and bundles them into `stories.zip` via JSZip — keeps the visible whiteboard editable while still producing publish-ready files.
+
 ## What we never post
 
 Generic beauty-industry stock photography, AI-generated people, hype captions ("GAME CHANGER 🔥"), emoji-heavy captions, more than one accent-bubble color per carousel.
